@@ -1,0 +1,38 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    background: linear-gradient(to right, hsl(18, 25%, 74%), #316fac); /* Subtle gradient background */
+    color: hwb(0 6% 93%); /* Dark text for better readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    background: #343a40; /* Dark background */
+    color: hwb(0 37% 13%);
+    text-align: center;
+    padding: 5px 0;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+    font-size: 25px;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(130, 233, 13, 0.1);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.about-section {
+    background-color: #b9a0af;  /* Light background color */
+    padding: 20px;
+}
+
+.about-section img {
+    border-radius: 50%;  /* Circular Image */
+    box-shadow: 0 4px 8px rgba(201, 4, 4, 0.1);  /* Soft shadow around the image */
+}
