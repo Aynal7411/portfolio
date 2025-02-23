@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-6 mb-4 ms-auto">
+    <p class="text-center"><b>Discuss About your Need With Aynal Haque</b></p>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
+    <form method="POST" class="mt-4">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.name.label_tag }}
+            {{ form.name }}
+        </div>
+        <div class="mb-3">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+        </div>
+        <div class="mb-3">
+            {{ form.phone.label_tag }}
+            {{ form.phone }}
+        </div>
+        <div class="mb-3">
+            {{ form.business_name.label_tag }}
+            {{ form.business_name }}
+        </div>
+        <div class="mb-3">
+            {{ form.service_type.label_tag }}
+            {{ form.service_type }}
+        </div>
+        <div class="mb-3">
+            {{ form.budget.label_tag }}
+            {{ form.budget }}
+        </div>
+        <div class="mb-3">
+            {{ form.preferred_date.label_tag }}
+            {{ form.preferred_date }}
+        </div>
+        <div class="mb-3">
+            {{ form.message.label_tag }}
+            {{ form.message }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
